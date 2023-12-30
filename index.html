@@ -22,9 +22,6 @@
     -->
 
 
-    
-
-
     <!-- #selector -->
     <!-- <p id="pra"> this is p1</p>
     <p class="black">this is p2</p>
@@ -36,6 +33,22 @@
         $("*").hide()  -- * works to hide all element
     </script> -->
 
+
+    <!-- Events -->
+    <p id="pra">This is a p</p>
+
+
+    <button id="btn">Click</button>
+    <br><br>
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px;"></div>
+
+    <script>
+        $("#colored-div").mouseleave(function(){
+            // alert("Click");
+            $("#pra").hide();
+        })
+
+    </script>
 
 </body>
 </html>
