@@ -35,7 +35,7 @@
 
 
     <!-- Events -->
-    <p id="pra">This is a p</p>
+    <!-- <p id="pra">This is a p</p>
 
 
     <button id="btn">Click</button>
@@ -48,8 +48,63 @@
             $("#pra").hide();
         })
 
-    </script>
+    </script> -->
 
+
+ <!-- effects -->
+    <!-- <p id="pra">this is p tag</p>
+
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    <br><br>
+
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px;" ></div>
+
+        <script>
+            $("#btn1").click(function() {
+                $("#colored-div").hide(2000);
+                // 2000 is the time duration on the effect in milisecond
+            })
+
+            $("#btn2").click(function() {
+                $("#colored-div").show(2000);
+            })
+
+            $("#btn1").click(function() {
+                $("#colored-div").fadeOut(2000)
+            })
+
+            $("#btn1").click(function() {
+                $("#colored-div").animate({
+                    opacity: '0.5',
+                    height: '200px',
+                    width: '200px'
+                }, 3000)//time duration)
+            })
+
+            call back function give this function after the timer expires makes anynomous function
+
+            $("#btn1").click(function(){
+                $("#colored-div").hide(2000, function(){
+                    alert("div hidden!");
+                })
+            });
+
+            chaining method  -- chaining garna lai . lagauda huncha
+            $("#btn1").click(function() {
+                $("#colored-div").css("background-color", "red").slideToggle(2000)
+            })
+
+            to stop the animation on the colored div
+            $("#btn2").click(function(){
+                $("#colored-div").stop();
+            })
+
+            $("#btn2").click(function() {
+                $("#colored-div").fadeIn(2000);
+            })
+            
+        </script> -->
 </body>
 </html>
 
