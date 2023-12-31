@@ -105,6 +105,72 @@
             })
             
         </script> -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- manipulating dom(document object model) -->
+        <!-- <p id="pra">this is a p tag</p>
+
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button2</button>
+        <br><br>
+        <div id="colored-div" style="background-color: lightgreen; height: 100px; width: 100px;">
+            <p>
+                This is a p tag
+            </p>
+        </div> -->
+
+        <!-- before -->
+        <ul id="list">
+            <!-- prepend -->
+            <li>red</li>
+            <li>black</li>
+            <li>green</li>
+            <!-- append -->
+        </ul>
+        <!-- after -->
+
+        <input type="text" id="input1">
+
+        <script>
+            // fetch text
+            // $("#btn1").click(function() {
+            //     // var txt = $("#colored-div").text();
+            //     $("#colored-div").html("heading")
+            //     // alert(txt)
+            // })
+
+            //to get the input text we need to add the method .val()
+            // $("#btn1").click(function(){
+            //     var value = $("#input1").val();
+            //     alert(value)
+            // })
+
+            // $("#btn2").click(function(){
+            //     $("#input1").val("jayandra hamal")
+            // })
+
+
+            $("#list").append("<li>yelllow</li>")
+            $("#list").prepend("<li>purple</li>")
+            $("#list").after("<p>After element</p>")
+            $("#list").before("<p>before element</p>")
+
+            // to empty the list
+            // $("#list").empty();
+
+
+        </script>
+
+        <!-- jun pani value equal rakeyra dinchan jastai id=, text=, teslai attribute vanincha -->
 </body>
 </html>
 
