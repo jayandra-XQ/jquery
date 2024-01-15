@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body align="center">
+    <!-- <label >Enter your name</label>
+   <input type="text" > -->
+
+   <!-- <p>window resized <span>0</span>times.</p> -->
+
+   <!-- <button id="btn">Animate height & width</button>
+   <div id="box" style="background:#bf2121; height: 100px; width: 100px; margin: 6px;"></div> -->
+<div>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, possimus.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus quidem doloremque sapiente, quibusdam enim?</p>
+</div>
+   <button class="fout">Fade out</button>
+   <button class="fin">Fade in</button>
+   <button class="ftoggle">Fade Toggle</button>
+   <button class="fto">fade To</button>
+</body>
+<script>
+//   $(document).ready(function() {
+//     $("#btn").click(function() {
+//         $("#box").animate({
+//             height: '300px',
+//             width: '300px'
+
+//         }, {
+//             duration: 5000,
+//             complete: function() {
+//                 $(this).after("<p>Animation is complete!</p>")
+//             }
+//         })
+//     })
+//   })
+
+    // $(document).ready(function() {
+    //     $("input").blur(function() {
+    //         $("input").css("background-color", "yellow")
+    //     });
+    // $("input").focus(function() {
+    //     $("input").css("background-color", "red")
+    // })
+    // })
+
+    // $(window).resize(function() {
+    //     $("span").text(x = x+ 1)
+    // })
+
+$(document).ready(function() {
+    $(".fout").click(function(){
+        $("div").fadeOut("slow")
+    })
+    $(".fin").click(function(){
+        $("div").fadeIn("slow")
+    })
+    $(".ftoggle").click(function(){
+        $("div").fadeToggle("slow")
+    })
+    $(".fto").click(function(){
+        $("div").fadeTo("slow")
+    })
+})
+
+</script>
+</html>
